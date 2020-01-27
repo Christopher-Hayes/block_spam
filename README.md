@@ -12,7 +12,7 @@ With cookie/header/graphql data loaded into environmental variables. The code wo
 
 ----
 
-## Requred environmental variables
+## Required environmental variables
 
 **Instagram**
 ```
@@ -44,3 +44,11 @@ export BLOCK_USER_MEDIUM_USER_ID=""
 ## Instagram user blocking
 
 <img src="https://imgur.com/GdGTtMl.jpg"/>
+
+----
+
+# Roadmap
+
+- ✅ Medium
+- ✅ Instagram
+- 🚧 Twitter
