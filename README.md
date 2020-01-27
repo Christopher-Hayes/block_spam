@@ -9,3 +9,28 @@ I'm sure for some people this doesn't really matter. Personally, I don't post a 
 With cookie/header/graphql data loaded into environmental variables. The code would be run with:
 
     python3 blockBots.py
+
+----
+
+## Requred environmental variables
+
+**Instagram**
+```
+export BLOCK_USER_INSTA_COOKIES=''
+export BLOCK_USER_INSTA_CSRF=""
+export BLOCK_USER_INSTA_APP_ID=""
+export BLOCK_USER_INSTA_AJAX=""
+export BLOCK_USER_INSTA_USER_AGENT=""
+export BLOCK_USER_INSTA_WHITELIST="USERNAME1,USERNAME2,USERNAME3"
+export BLOCK_USER_INSTA_QUERY_HASH=""
+export BLOCK_USER_INSTA_QUERY_ID=""
+export BLOCK_USER_INSTA_GIS=""
+```
+
+**Medium**
+```
+export BLOCK_USER_MEDIUM_USERNAME=""
+export BLOCK_USER_MEDIUM_COOKIES="
+export BLOCK_USER_MEDIUM_USER_AGENT=""
+export BLOCK_USER_MEDIUM_USER_ID=""
+```
