@@ -32,3 +32,15 @@ export BLOCK_USER_MEDIUM_USERNAME=""
 export BLOCK_USER_MEDIUM_COOKIES="
 export BLOCK_USER_MEDIUM_USER_ID=""
 ```
+
+----
+
+# Screenshots
+
+## Medium user blocking
+
+<img src="https://imgur.com/8oIqybR.jpg"/>
+
+## Instagram user blocking
+
+<img src="https://imgur.com/GdGTtMl.jpg"/>
