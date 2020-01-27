@@ -23,6 +23,8 @@ export BLOCK_USER_INSTA_WHITELIST="USERNAME1,USERNAME2,USERNAME3"
 export BLOCK_USER_INSTA_QUERY_HASH=""
 export BLOCK_USER_INSTA_QUERY_ID=""
 ```
+*"WHITELIST" is not a header, that variable is a list of follower usernames that follow a lot of people, but you don't want to block.*
+*QUERY_HASH, and QUERY_ID are not headers either, those are for the GraphQL request, to find those you'll need to block a user in the browser, then look for that GraphQL request.*
 
 **Medium**
 ```
