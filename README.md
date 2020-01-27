@@ -1,6 +1,6 @@
-# block_spam
+# block_spam: Follow-Spam Blocker
 
-Medium + Instagram Follow-Spam Blocker. Python scripts that go through your followers and when a follower is following over a specified threshold (ie following 1,500 accounts), the script blocks their profile.
+**Python scripts that go through your followers and when a follower is following over a specified threshold (ie following 1,500 accounts), the script blocks their profile. Currently works for Medium.com and Instagram.**
 
 I'm sure for some people this doesn't really matter. Personally, I don't post a whole lot, so I'm only really interested in having friends + real people as followers. I find it mildly annoying when I get a bunch notifications about these bot accounts following me. So, I created a script to automatically weed out these accounts.
 
