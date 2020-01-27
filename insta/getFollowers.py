@@ -17,9 +17,6 @@ headers = {
     'cache-control': "no-cache,no-cache",
     'cookie': os.environ['BLOCK_USER_INSTA_COOKIES'],
     'pragma': "no-cache",
-    'user-agent': os.environ['BLOCK_USER_INSTA_USER_AGENT'],
-    'x-ig-app-id': os.environ['BLOCK_USER_INSTA_APP_ID'],
-    'x-instagram-gis': os.environ['BLOCK_USER_INSTA_GIS'],
     'x-requested-with': "XMLHttpRequest"
 }
 

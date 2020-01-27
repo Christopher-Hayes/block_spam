@@ -22,8 +22,7 @@ headers = {
     'cache-control': "no-cache,no-cache",
     'cookie': os.environ['BLOCK_USER_MEDIUM_COOKIES'],
     'pragma': "no-cache",
-    'upgrade-insecure-requests': "1",
-    'user-agent': os.environ['BLOCK_USER_MEDIUM_USER_AGENT']
+    'upgrade-insecure-requests': "1"
     }
 
 def followers_json():

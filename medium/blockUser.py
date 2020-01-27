@@ -17,8 +17,7 @@ headers = {
         'cookie': os.environ['BLOCK_USER_MEDIUM_COOKIES'],
         'graphql-operation': "UserBlockMutation",
         'origin': "https://medium.com",
-        'pragma': "no-cache",
-        'user-agent': os.environ['BLOCK_USER_MEDIUM_USER_AGENT']
+        'pragma': "no-cache"
         }
 user_id=os.environ['BLOCK_USER_MEDIUM_USER_ID']
 
