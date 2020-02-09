@@ -1,6 +1,6 @@
-# block_spam
+# block_spam: Follow-Spam Blocker
 
-Medium + Instagram Follow-Spam Blocker. Python scripts that go through your followers and when a follower is following over a specified threshold (ie following 1,500 accounts), the script blocks their profile.
+**Python scripts that go through your followers and when a follower is following over a specified threshold (ie following 1,500 accounts), the script blocks their profile. Currently works for Medium.com and Instagram.**
 
 I'm sure for some people this doesn't really matter. Personally, I don't post a whole lot, so I'm only really interested in having friends + real people as followers. I find it mildly annoying when I get a bunch notifications about these bot accounts following me. So, I created a script to automatically weed out these accounts.
 
@@ -12,7 +12,7 @@ With cookie/header/graphql data loaded into environmental variables. The code wo
 
 ----
 
-## Requred environmental variables
+## Required environmental variables
 
 **Instagram**
 ```
@@ -23,6 +23,8 @@ export BLOCK_USER_INSTA_WHITELIST="USERNAME1,USERNAME2,USERNAME3"
 export BLOCK_USER_INSTA_QUERY_HASH=""
 export BLOCK_USER_INSTA_QUERY_ID=""
 ```
+*"WHITELIST" is not a header, that variable is a list of follower usernames that follow a lot of people, but you don't want to block.*
+*QUERY_HASH, and QUERY_ID are not headers either, those are for the GraphQL request, to find those you'll need to block a user in the browser, then look for that GraphQL request.*
 
 **Medium**
 ```
@@ -30,3 +32,23 @@ export BLOCK_USER_MEDIUM_USERNAME=""
 export BLOCK_USER_MEDIUM_COOKIES="
 export BLOCK_USER_MEDIUM_USER_ID=""
 ```
+
+----
+
+# Screenshots
+
+## Medium user blocking
+
+<img src="https://imgur.com/8oIqybR.jpg"/>
+
+## Instagram user blocking
+
+<img src="https://imgur.com/GdGTtMl.jpg"/>
+
+----
+
+# Roadmap
+
+- ✅ Medium
+- ✅ Instagram
+- 🚧 Twitter
