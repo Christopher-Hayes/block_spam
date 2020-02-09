@@ -16,6 +16,7 @@ def block_spammers():
     followers = json_resp['data']['user']['edge_followed_by']['edges']
     # Log what users get blocked
     out = open('blocked_instagram.txt', 'a')
+    blockedCount = 0
     for f in followers:
         d = f['node']
         user_id = d['id']
@@ -24,13 +25,15 @@ def block_spammers():
         following = gu.get_user_following(username)
         # Block users over specified follow threshold
         block = following > FOLLOW_THRESHOLD
-        print('{} ({}) \tFollowing: {}'.format(full_name, username, following))
+        print('\t{}:\n\t\tusername: {}\n\t\tFollowing: {}\n'.format(full_name, username, following))
         if (block and not username in BLOCK_WHITELIST):
             status = bu.block_user(user_id)
             if (status):
                 print('---------- BLOCKED USER {} -----------'.format(username))
                 # Log what users get blocked
                 out.write(username + '\n')
+                blockedCount += 1
             else:
                 print('---------- ERROR: FAILED TO BLOCK USER {} ---------'.format(username))
     out.close()
+    print('\tBlocked Users: {}\n'.format(blockedCount))

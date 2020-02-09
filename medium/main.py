@@ -40,12 +40,12 @@ def followers_json():
         username = json_resp[v]['username']
         user_id = json_resp[v]['userId']
         following, followers = fr.get_ratio(username)
-        print('name: {}\n\tusername: {}\n\tfollowing: {}\n\tfollowers: {}\n\t'.format(name, username, following, followers))
+        print('\tname: {}\n\t\tusername: {}\n\t\tfollowing: {}\n\t\tfollowers: {}\n'.format(name, username, following, followers))
         if int(following) > follow_block_at:
             print('------------------------------------------\n\tBLOCKING USER: {}\n------------------------------------------'.format(username))
             print('User block server response: {}\n'.format(bu.block_user(user_id).text))
             users_blocked += 1
-    print('Users Blocked: {}'.format(users_blocked))
+    print('\tBlocked Users: {}'.format(users_blocked))
 
 start = '"User":{'
 end = ',"Social":'
